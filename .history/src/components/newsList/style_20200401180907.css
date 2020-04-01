@@ -1,0 +1,18 @@
+.container {
+    margin: 120px;
+    
+}
+.container h1 {
+    margin-bottom: 50px;
+}
+
+.card.body {
+    padding-bottom: 20px;
+}
+.container .sort {
+    text-align: center;
+}
+.container .sort .btn {
+    border: 0 gray solid;
+    border-top: none;
+}

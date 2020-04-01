@@ -1,0 +1,10 @@
+.container {
+    margin: 150px;
+}
+.container h1 {
+    margin-bottom: 50px;
+}
+
+.card {
+    padding: 20px;
+}

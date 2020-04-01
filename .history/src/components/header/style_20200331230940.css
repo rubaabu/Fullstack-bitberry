@@ -1,0 +1,15 @@
+.header {
+    background-image: url('../pics/earth.jpg');
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.header .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 107, 121, 0.5);
+  
+
+}

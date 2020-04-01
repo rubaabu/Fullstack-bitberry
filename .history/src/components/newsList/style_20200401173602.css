@@ -1,0 +1,14 @@
+.container {
+    margin: 150px;
+    height: 700px;
+}
+.container h1 {
+    margin-bottom: 50px;
+}
+
+.card.body {
+    padding-bottom: 20px;
+}
+.container div .btn {
+    text-align: center;
+}

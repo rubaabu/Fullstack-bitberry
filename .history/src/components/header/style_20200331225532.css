@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #212121;
+    font-family: sans-serif;
+    color: white;
+  }
+  
+/* more then one time*/
+.font {
+    font-size: x-large;
+  }
+  .flex {
+    display: flex;
+  }
+  /* end more then one time*/
+  
+.main1 {
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: 160px;
+  }
+  
+  .main1-name {
+    font-size: 50px;
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  .main1-p {
+    width: 500px;
+    line-height: 1.6;
+  }
+  
+  .main1-btn {
+    background-color: #fff;
+    color: #212121;
+    padding: 10px 30px;
+    border: none;
+  }
+  
