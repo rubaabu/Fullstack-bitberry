@@ -3,7 +3,7 @@
     $DBhost = 'localhost';
     $DBuser = 'root';
     $DBpassword = '';
-    $DBname = 'bitberry';   
+    $DBname = 'nitberry';   
     
     $conn= mysqli_connect($DBhost, $DBuser, $DBpassword, $DBname);
 

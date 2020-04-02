@@ -19,14 +19,13 @@ export const NewsList = props => {
         </button>
       </div>
       {/* loop through the data and send it to the newsCard component */}
-      {news &&
+      {/* {news &&
         news.map(el => (
           <NewsCard el={el} key={el.news_id} detailsClick={detailsClick} />
-        ))}
+        ))} */}
     </div>
   );
 };
-
 
 // Component returns the data will be called in the exported function component 
 // 1. Parameter is the sent props

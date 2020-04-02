@@ -15,10 +15,12 @@ $tool = new toolBox;
 $sql = "SELECT * FROM news JOIN user ON news_created_by=user_id";
 $result = mysqli_query($conn,$sql);
 
-if(mysqli_num_rows($result) > 0){
+if(mysqli_num_rows($result) == TRUE){
     $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
-    echo $tool->dataStatus(1,$rows);
-} 
+    // echo $tool->dataStatus(1,$rows);
+   echo  json_encode(["success"=>1,"msg"=>$rows]);
+
+}
 else{
     echo $tool->dataStatus(0,"Error");
 

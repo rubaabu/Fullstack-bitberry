@@ -13,11 +13,11 @@ export const NewsList = props => {
   return (
     <div className="container">
       <h1>Things to do during the quarantine</h1>
-      <div className="sort">
+      {/* <div className="sort">
         <button className="btn btn-link" onClick={() => sort(news)}>
           Sort by Date
         </button>
-      </div>
+      </div> */}
       {/* loop through the data and send it to the newsCard component */}
       {news &&
         news.map(el => (
@@ -26,7 +26,6 @@ export const NewsList = props => {
     </div>
   );
 };
-
 
 // Component returns the data will be called in the exported function component 
 // 1. Parameter is the sent props

@@ -27,7 +27,6 @@ export const NewsList = props => {
   );
 };
 
-
 // Component returns the data will be called in the exported function component 
 // 1. Parameter is the sent props
 const NewsCard = props => {

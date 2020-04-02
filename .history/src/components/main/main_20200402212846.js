@@ -22,6 +22,7 @@ class Main extends React.Component {
 
   componentDidMount() {
     const API_PATH = "http://127.0.0.1:8080/read.php";
+
     axios
       .get(API_PATH)
       .then(response => response.data)

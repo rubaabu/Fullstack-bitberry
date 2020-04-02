@@ -26,9 +26,9 @@ class Main extends React.Component {
       .get(API_PATH)
       .then(response => response.data)
       .then(data => {
-        this.setState({ news: data.msg });
+        this.setState({ news: data });
 
-        console.log(this.state.news);
+        console.log(this.state.news.msg);
       });
   }
 
