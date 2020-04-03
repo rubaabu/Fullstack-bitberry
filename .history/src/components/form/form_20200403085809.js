@@ -48,7 +48,7 @@ class Form extends React.Component {
       news_id: this.props.el.news_id,
       news_title: this.state.title,
       news_info: this.state.info,
-      news_status: this.state.status
+      news_status: this.state.status,
     };
 
     console.log("values", values);
@@ -94,7 +94,15 @@ class Form extends React.Component {
               <option value="Closed">Closed</option>
             </select>
           </div>
-         
+          <div className="form-group">
+            <p>updated by</p>
+            <input
+              type="text"
+              name="updated"
+              defaultValue={updated_by}
+              onChange={this.handleInputUpdatedBy}
+            />
+          </div>
 
           <hr />
 
