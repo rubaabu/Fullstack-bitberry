@@ -28,7 +28,7 @@ class Main extends React.Component {
       .then(data => {
         this.setState({ news: data.msg });
 
-        // console.log(this.state.news);
+        console.log(this.state.news);
       });
   }
 

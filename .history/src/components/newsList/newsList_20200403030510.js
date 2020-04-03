@@ -21,7 +21,7 @@ export const NewsList = props => {
       {/* loop through the data and send it to the newsCard component */}
       {news &&
         news.map(el => (
-          <NewsCard el={el} key={el.news_id} detailsClick={detailsClick} />
+          <NewsCard el={el} some={el.news_id} detailsClick={detailsClick} />
         ))}
     </div>
   );
@@ -37,7 +37,7 @@ const NewsCard = props => {
   let date = new Date(el.news_created_at).toLocaleDateString();
 
   return (
-    <div className="card" >
+    <div className="card" key={some}>
       <div className="card-body">
         <h5 className="card-title">{el.news_title}</h5>
         <p className="card-text">

@@ -12,7 +12,7 @@ class Form extends React.Component {
       title: props.el.news_title,
       info: props.el.news_info,
       status: props.el.news_status,
-      updated_by: props.el.user_name
+      updated_by: props.el.news_updated_by
     };
   }
   // Mwthods to set the new inputs in the states
@@ -67,6 +67,10 @@ class Form extends React.Component {
     this.props.update(values);
   };
 
+  users = () {
+   const users = this.props.el;
+   console.log(user)
+  }
 
   render() {
     const { title, info, status, updated_by } = this.state;

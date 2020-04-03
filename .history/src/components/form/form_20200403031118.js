@@ -50,6 +50,7 @@ class Form extends React.Component {
       updated_by
     });
     console.log("title", updated_by);
+      this.users()
   };
 
   // Method store new values in an obj and call update function
@@ -67,6 +68,10 @@ class Form extends React.Component {
     this.props.update(values);
   };
 
+  users = () => {
+   const users = this.props.el.user_name;
+   console.log(users)
+  }
 
   render() {
     const { title, info, status, updated_by } = this.state;
