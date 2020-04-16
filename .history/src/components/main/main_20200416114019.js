@@ -11,8 +11,8 @@ import { NewsDetails } from "./../newsDetails/newsDetails";
 import Form from "./../form/form";
 
 // configs import
-import { read_path } from './../../config/constants';
-import { update_path } from './../../config/constants';
+import {read_path} from './../../config/constants';
+import {update_path} from './../../config/constants';
 
 class Main extends React.Component {
   constructor(props) {
@@ -65,6 +65,7 @@ class Main extends React.Component {
   updateNews = async values => {
     const { selected, status } = this.state;
 
+
     await axios
       .post(update_path, values)
       .then(data => {
@@ -98,7 +99,6 @@ class Main extends React.Component {
   render() {
     const { news, selected } = this.state;
     return (
-      // {this.props.loggedIn ?
       <div>
         <Router>
           <Switch>

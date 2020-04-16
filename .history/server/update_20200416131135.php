@@ -33,17 +33,16 @@ if(isset($data->news_id)
     
 
 
-    // Prepared Query
+    //Query
     $sql = "UPDATE news SET news_title =?, news_info=?, news_status=? WHERE news_id=?";
     if($stmt = mysqli_prepare($conn,$sql)){
-         // Bind variables to the prepared statement as parameters
-        mysqli_stmt_bind_param($stmt, "sssi", $param_title, $param_info, $param_status, $param_id);
-        // parameters
-        $param_title = $news_title;
+        mysqli_stmt_bind_param($stmt, "sssi", $param_titl, $param_info, $param_status, $param_id);
+
+        $param_titl = $news_title;
         $param_info = $news_info;
         $param_status = $news_status;
         $param_id = $news_id;
-        // execute the prepared statement
+
         if(mysqli_stmt_execute($stmt)){
             echo $tool->dataStatus(1,"Updated!");
         } else {

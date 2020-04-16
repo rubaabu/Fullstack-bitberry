@@ -98,7 +98,6 @@ class Main extends React.Component {
   render() {
     const { news, selected } = this.state;
     return (
-      // {this.props.loggedIn ?
       <div>
         <Router>
           <Switch>

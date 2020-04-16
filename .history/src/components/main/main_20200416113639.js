@@ -10,9 +10,8 @@ import { NewsList } from "./../newsList/newsList";
 import { NewsDetails } from "./../newsDetails/newsDetails";
 import Form from "./../form/form";
 
-// configs import
-import { read_path } from './../../config/constants';
-import { update_path } from './../../config/constants';
+import read_path from './../../config/constants';
+import update_path from './../../config/constants';
 
 class Main extends React.Component {
   constructor(props) {
@@ -25,9 +24,9 @@ class Main extends React.Component {
   }
 
   componentDidMount() {
-
+    const API_PATH = "http://127.0.0.1:8080/read.php";
     axios
-      .get(read_path)
+      .get(API_PATH)
       .then(response => response.data)
       .then(data => {
         this.setState({ news: data.msg });
@@ -64,9 +63,10 @@ class Main extends React.Component {
   // 1. Parameter is the values as obj
   updateNews = async values => {
     const { selected, status } = this.state;
+    const PATH = "http://127.0.0.1:8080/update.php";
 
     await axios
-      .post(update_path, values)
+      .post(PATH, values)
       .then(data => {
         this.setState({ status: data.data });
         console.log(this.state.status);
@@ -98,7 +98,6 @@ class Main extends React.Component {
   render() {
     const { news, selected } = this.state;
     return (
-      // {this.props.loggedIn ?
       <div>
         <Router>
           <Switch>

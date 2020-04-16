@@ -4,13 +4,14 @@ import React from "react";
 // Styles Imports
 import "./App.css";
 
-// Libraries Imports
-import {  BrowserRouter} from "react-router-dom";
-
 // Components Imports
+import Main from "./components/main/main";
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
+
 import {Routes} from "./config/Routes";
+import {  BrowserRouter} from "react-router-dom";
+import Auth from './config/auth';
 
 class App extends React.Component {
  
@@ -20,7 +21,7 @@ class App extends React.Component {
       <>
         <BrowserRouter>
           <Header />
-            <Routes />
+          <Routes />
           <Footer />
         </BrowserRouter>
       </>
